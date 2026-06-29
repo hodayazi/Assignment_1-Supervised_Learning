@@ -88,10 +88,8 @@ I would monitor the model F1 and ROC-AUC on fresh orders, the rate of negative r
 6. Real world
 - If deployed Monday: what would you monitor? I would monitor the negative review rate, model F1 and ROC-AUC, false negative volume, and drift in delivery-related features such as `delay_days`.
 - What signal would make you retrain it? A sustained drop in F1, a sudden increase in false negatives, or significant drift in key feature distributions would trigger retraining.
-```
-
 ---
 
 ## 5. Reflection
 What surprised you? What would you do differently with two more weeks or more data? How would this approach change if it were part of your mid-term project?
-I was surprised that the dumb baseline still scored 0.000 F1, which highlights how much harder the problem is than raw accuracy suggests. With two more weeks or more data, I would explore richer customer and product features, handle class imbalance more aggressively, and test additional model families or ensemble combinations. For a mid-term project, I would also build a monitoring pipeline, add fairness checks, and connect the prediction output to a concrete intervention workflow so the model could be evaluated by actual business impact.
+I was surprised that the dumb baseline still scored 0.000 F1, which highlights how much harder the problem is than raw accuracy suggests. With two more weeks or more data, I would explore richer customer and product features, handle class imbalance more aggressively, and test additional model families or ensemble combinations. For a mid-term project, I would also build a monitoring pipeline and connect the prediction output to a concrete intervention workflow so the model could be evaluated by actual business impact.
